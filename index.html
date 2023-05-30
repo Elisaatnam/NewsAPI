@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Get latest News</title>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<h1>News.org</h1>
+				<div class="search-div">
+					<label for="search">Find News on a specific topic</label>
+					<input type="text" id="search" placeholder="Enter Search Term" />
+					<div class="lang-div">
+						<label for="lang">Language for Results</label>
+						<select name="language" id="lang">
+							<option value="en">English</option>
+							<option value="de">Deutsch</option>
+							<option value="fr">Français</option>
+						</select>
+						<br />
+						<button>Get News</button>
+					</div>
+				</div>
+			</header>
+
+			<h2>Top Headlines in the US</h2>
+			<section class="top-headlines"></section>
+			<section class="search-results"></section>
+		</div>
+
+		<button id="to-top-btn" title="Go to top">
+			<img src="./assets/img/up-arrow.png" alt="back to top" />
+		</button>
+
+		<script type="text/javascript" src="./assets/js/main.js"></script>
+	</body>
+</html>

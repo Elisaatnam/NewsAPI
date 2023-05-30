@@ -1,0 +1,151 @@
+@font-face {
+	font-family: Klaber;
+	src: url(../fonts/KlaberFraktur.ttf);
+}
+
+@font-face {
+	font-family: Zeit;
+	src: url(../fonts/Zeit-Light.otf);
+}
+
+:root {
+	--var1: ;
+	--var2: ;
+	--var3: ;
+}
+
+/* GLOBAL SETTINGS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-family: Zeit;
+	scroll-behavior: smooth;
+}
+
+h1 {
+	font-size: 12vw;
+	letter-spacing: 1vw;
+	font-family: Klaber;
+	display: inline-block;
+}
+
+h2 {
+	font-size: 4vw;
+	margin-bottom: 2vh;
+	text-align: center;
+}
+
+h3 {
+	font-size: 2vw;
+	font-weight: 900;
+	margin-bottom: 1vh;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+article {
+	width: 100%;
+	height: 75vh;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+img {
+	width: 100%;
+}
+
+.image-container {
+	width: 100%;
+	height: 40vh; /* Adjust the desired height for the image container */
+	background-size: cover;
+}
+
+/* Wrapper */
+.wrapper {
+	background-color: #edece8;
+	padding: 2vh 5vw;
+}
+
+/* HEADER */
+header {
+	background-color: #edece8;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+}
+
+.search-div {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	font-size: 1.25vw;
+}
+
+input {
+	font-size: 1.25vw;
+	height: 4vh;
+	width: 20vw;
+	text-align: center;
+	border-radius: 5px;
+	margin-bottom: 0.5vh;
+}
+
+button {
+	font-size: 1.1vw;
+	padding: 0.25vh;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+select {
+	margin-bottom: 0.5vh;
+	font-size: 1.1vw;
+}
+
+/* Section top-headlines  */
+.top-headlines {
+	display: grid;
+	grid-column-gap: 20px;
+	justify-items: start;
+	border-bottom: 2px solid black;
+	margin-bottom: 5vh;
+}
+
+.article-big {
+	height: 55vh;
+}
+
+.search-results {
+	display: grid;
+	grid-column-gap: 20px;
+	justify-items: start;
+	border-bottom: 2px solid black;
+}
+
+/* Back to Top Button */
+#to-top-btn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+#to-top-btn img {
+	width: 2.5vw;
+	height: auto;
+}
