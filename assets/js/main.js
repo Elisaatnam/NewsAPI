@@ -4,7 +4,7 @@ const searchResultSection = document.querySelector(".search-results");
 const getNewsBtn = document.querySelector("button");
 const backToTop = document.querySelector("#to-top-btn");
 
-//TOP HEADLINES
+//+++++++++TOP HEADLINES++++++++++++++++
 fetch(`http://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`)
 	.then(res => res.json())
 	.then(data => {
@@ -36,7 +36,7 @@ fetch(`http://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`)
 		console.log(`Fehler: ${err}`);
 	});
 
-//SEARCH FUNCTION
+//+++++++++++++ SEARCH FUNCTION +++++++++++++++++++++
 getNewsBtn.addEventListener("click", () => {
 	const searchTerm = document.querySelector("input").value;
 	const lang = document.querySelector("select").value;
@@ -58,7 +58,7 @@ getNewsBtn.addEventListener("click", () => {
 	}
 
 	fetch(
-		`https://newsapi.org/v2/everything?q=${searchTerm}&language=${lang}&apiKey=${apiKey}`,
+		`http://newsapi.org/v2/everything?q=${searchTerm}&language=${lang}&apiKey=${apiKey}`,
 	)
 		.then(res => res.json())
 		.then(data => {
